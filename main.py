@@ -178,10 +178,10 @@ def contact():
                           body = message + "\n" + phone
                           )
     return render_template('contact.html', params=params)
-@app.route('/favicon.ico')
+'''@app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')'''
     
 @app.errorhandler(404)
 def not_found(e):
