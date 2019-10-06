@@ -180,7 +180,7 @@ def contact():
     return render_template('contact.html', params=params)
 @app.route('/favicon.ico')
 def hello():
-    return redirect(url_for('static', filename='favicon.ico'), code=302)
+    return redirect(url_for('static', filename='img/favicon.ico'), code=302)
     
 @app.errorhandler(404)
 def not_found(e):
